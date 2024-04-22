@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+}
+
+.nav-bar {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-links-items {
+  font-family: "Play", "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.main_div {
+  height: 100vh;
+  padding: 100px;
+}
+
+.info_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game_grid {
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+  grid-template-rows: repeat(3,10vw);
+  grid-template-columns: repeat(3,10vw);
+  gap: 50px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.box:hover{
+  transform: scale(1.2);
+  transition: 0.3s;
+  cursor: pointer;
+  background: transparent;
+}
+.score_div{
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* .reload{
+  width: 10px;
+  height:10px;
+} */
+
+.reload:hover{
+  cursor: pointer;
+  height: 20px;
+  width:20px;
+  transition: 1ms;
+}
+#logo{
+  font-weight: 700;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d1c4974770.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li class="nav-links-items" id="logo">TicTacToe.com</li>
+      </ul>
+    </nav>
+    <div class="main_div">
+      <div class="info_div">
+        
+        <div>
+          <span>Turn: </span>
+          <span class="turnDisplay">X</span>
+        </div>
+        <div>
+          <span class="reload">
+            <input type="Reset">   
+          </span>
+        </div>
+      </div>
+      <div class="game_grid">
+        <div class="box" id="0"><span class="box_symbol">        </span></div>
+        <div class="box" id="1"><span class="box_symbol">        </span></div>
+        <div class="box" id="2"><span class="box_symbol">        </span></div>
+        <div class="box" id="3"><span class="box_symbol">        </span></div>
+        <div class="box" id="4"><span class="box_symbol">        </span></div>
+        <div class="box" id="5"><span class="box_symbol">        </span></div>
+        <div class="box" id="6"><span class="box_symbol">        </span></div>
+        <div class="box" id="7"><span class="box_symbol">        </span></div>
+        <div class="box" id="8"><span class="box_symbol">        </span></div>
+      </div>
+      <div class="score_div">
+        <div class="player">
+          <span>
+            X Won 
+          </span>
+          <span class="X-won">
+            0
+          </span>
+        </div>
+        <div class="player">
+          <span>
+            Tie 
+          </span>
+          <span class="TieScores">
+            0
+          </span>
+        </div>
+        <div class="player">
+          <span>
+            O Won
+            
+          </span>
+          <span class="O-won">
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
